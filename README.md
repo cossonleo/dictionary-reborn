@@ -6,7 +6,7 @@
 
 `sudo apt install g++ qt5-default libdtkwidget-dev`
 
-## 编译
+## 编译步骤
 
 * mkdir build
 * cd build
