@@ -14,7 +14,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
         main_window.cpp \
-    left_widget.cpp
+    left_widget.cpp \
+    right_widget.cpp
 
 HEADERS  += main_window.h \
-    left_widget.h
+    left_widget.h \
+    right_widget.h
