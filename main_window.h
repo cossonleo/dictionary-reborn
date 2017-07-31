@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QHBoxLayout>
 #include "left_widget.h"
+#include "right_widget.h"
 
 class MainWindow : public QMainWindow
 {
@@ -17,6 +18,7 @@ private:
     QWidget *mainWidget;
     QHBoxLayout *layout;
     LeftWidget *leftWidget;
+    RightWidget *rightWidget;
 };
 
 #endif // MAIN_WINDOW_H
