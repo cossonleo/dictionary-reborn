@@ -4,7 +4,7 @@
 
 ## 编译依赖
 
-`sudo apt install g++ qt5-default libdtkwidget-dev`
+`sudo apt install g++ qt5-default`
 
 ## 编译步骤
 
