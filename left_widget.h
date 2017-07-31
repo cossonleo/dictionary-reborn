@@ -9,6 +9,8 @@ class LeftWidget : public QWidget
 
 public:
     LeftWidget(QWidget *parent = 0);
+
+    void paintEvent(QPaintEvent *);
 };
 
 #endif // LEFTWIDGET_H
