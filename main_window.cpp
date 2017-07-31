@@ -5,6 +5,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     mainWidget = new QWidget();
     layout = new QHBoxLayout();
+    leftWidget = new LeftWidget();
+
+    layout->addWidget(leftWidget);
 
     mainWidget->setLayout(layout);
 
