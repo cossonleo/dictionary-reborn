@@ -13,6 +13,8 @@ TEMPLATE = app
 CONFIG += c++11
 
 SOURCES += main.cpp\
-        main_window.cpp
+        main_window.cpp \
+    left_widget.cpp
 
-HEADERS  += main_window.h
+HEADERS  += main_window.h \
+    left_widget.h
