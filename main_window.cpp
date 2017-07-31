@@ -11,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
     layout->addWidget(leftWidget);
     layout->addWidget(rightWidget);
 
+    layout->setMargin(0);
+
     mainWidget->setLayout(layout);
 
     setCentralWidget(mainWidget);
