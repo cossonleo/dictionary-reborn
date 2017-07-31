@@ -1,13 +1,10 @@
 #include "main_window.h"
-#include <DApplication>
+#include <QApplication>
 #include <QDesktopWidget>
-
-DWIDGET_USE_NAMESPACE
 
 int main(int argc, char *argv[])
 {
-    DApplication::loadDXcbPlugin();
-    DApplication a(argc, argv);
+    QApplication a(argc, argv);
 
     MainWindow w;
     w.setFixedSize(550, 450);

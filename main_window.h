@@ -1,11 +1,9 @@
 #ifndef MAIN_WINDOW_H
 #define MAIN_WINDOW_H
 
-#include <DMainWindow>
+#include <QMainWindow>
 
-DWIDGET_USE_NAMESPACE
-
-class MainWindow : public DMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 

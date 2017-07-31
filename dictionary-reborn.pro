@@ -10,8 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = dictionary-reborn
 TEMPLATE = app
-CONFIG += c++11 link_pkgconfig
-PKGCONFIG += dtkwidget
+CONFIG += c++11
 
 SOURCES += main.cpp\
         main_window.cpp
