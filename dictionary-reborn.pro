@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     utils.cpp \
     home_page.cpp \
     translate_page.cpp \
-    about_page.cpp
+    about_page.cpp \
+    everyday_page.cpp
 
 HEADERS  += main_window.h \
     left_widget.h \
@@ -27,6 +28,7 @@ HEADERS  += main_window.h \
     utils.h \
     home_page.h \
     translate_page.h \
-    about_page.h
+    about_page.h \
+    everyday_page.h
 
 RESOURCES += resources.qrc
