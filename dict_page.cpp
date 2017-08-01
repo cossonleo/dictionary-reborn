@@ -20,14 +20,27 @@ DictPage::DictPage(QWidget *parent)
     pronLabel2->setStyleSheet("font-size: 13px");
     infoLabel->setStyleSheet("font-size: 17px");
 
+    pronLayout->addSpacing(30);
     pronLayout->addWidget(pronLabel1);
     pronLayout->addWidget(pronLabel2);
+    pronLayout->addSpacing(30);
+
+    QHBoxLayout *wordLayout = new QHBoxLayout();
+    QHBoxLayout *infoLayout = new QHBoxLayout();
+
+    wordLayout->addSpacing(30);
+    wordLayout->addWidget(nameLabel);
+    wordLayout->addSpacing(30);
+
+    infoLayout->addSpacing(30);
+    infoLayout->addWidget(infoLabel);
+    infoLayout->addSpacing(30);
 
     layout->addSpacing(20);
-    layout->addWidget(nameLabel);
+    layout->addLayout(wordLayout);
     layout->addLayout(pronLayout);
     layout->addSpacing(10);
-    layout->addWidget(infoLabel);
+    layout->addLayout(infoLayout);
     layout->addStretch();
 
     connect(api, SIGNAL(searchWordFinished(QString, QString, QString, QString)), this, SLOT(processingData(QString, QString, QString, QString)));

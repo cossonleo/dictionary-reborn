@@ -14,10 +14,20 @@ EverydayPage::EverydayPage(QWidget *parent)
     imageLabel->setScaledContents(true);
     infoLabel->setWordWrap(true);
 
+    QHBoxLayout *imageLayout = new QHBoxLayout();
+    imageLayout->addSpacing(15);
+    imageLayout->addWidget(imageLabel);
+    imageLayout->addSpacing(15);
+
+    QHBoxLayout *infoLayout = new QHBoxLayout();
+    infoLayout->addSpacing(20);
+    infoLayout->addWidget(infoLabel);
+    infoLayout->addSpacing(20);
+
     layout->addSpacing(10);
-    layout->addWidget(imageLabel);
+    layout->addLayout(imageLayout);
     layout->addSpacing(10);
-    layout->addWidget(infoLabel);
+    layout->addLayout(infoLayout);
 
     QNetworkRequest request;
     request.setUrl(QUrl("http://open.iciba.com/dsapi/"));

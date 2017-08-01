@@ -14,8 +14,10 @@ HomePage::HomePage(QWidget *parent)
     switchLayout->addWidget(everydayPage);
     switchLayout->addWidget(dictPage);
 
+    topLayout->addSpacing(20);
     topLayout->addWidget(queryEditor);
     topLayout->addWidget(queryButton);
+    topLayout->addSpacing(20);
 
     layout->addSpacing(5);
     layout->addLayout(topLayout);

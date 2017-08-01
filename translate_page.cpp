@@ -6,7 +6,7 @@ TranslatePage::TranslatePage(QWidget *parent)
     : QWidget(parent),
       api(new YoudaoAPI(this))
 {
-    layout = new QVBoxLayout;
+    layout = new QVBoxLayout(this);
     hLayout = new QHBoxLayout;
     original = new QPlainTextEdit;
     translator = new QPlainTextEdit;
@@ -29,6 +29,7 @@ TranslatePage::TranslatePage(QWidget *parent)
 
     translator->setReadOnly(true);
 
+    layout->setMargin(25);
     layout->addWidget(tips1);
     layout->addWidget(original);
     layout->addSpacing(10);
@@ -36,8 +37,6 @@ TranslatePage::TranslatePage(QWidget *parent)
     layout->addSpacing(10);
     layout->addWidget(tips2);
     layout->addWidget(translator);
-
-    setLayout(layout);
 
     connect(trBtn, SIGNAL(clicked()), this, SLOT(translateButtonClicked()));
     connect(clearBtn, SIGNAL(clicked()), this, SLOT(clearButtonClicked()));
