@@ -1,0 +1,15 @@
+QToolButton::checked {
+    border-left: 2px solid #2CA7F8;
+    border-right: none;
+    border-top: 1px solid #C4E6FD;
+    border-bottom: 1px solid #C4E6FD;
+    background-color: #D5EDFE;
+    color: #000000;
+}
+
+/*
+QToolButton::hover {
+    background-color: #CACACA;
+    border: none;
+}
+*/

@@ -2,6 +2,7 @@
 #define LEFTWIDGET_H
 
 #include <QWidget>
+#include <QVBoxLayout>
 
 class LeftWidget : public QWidget
 {
@@ -10,7 +11,13 @@ class LeftWidget : public QWidget
 public:
     LeftWidget(QWidget *parent = 0);
 
+protected:
     void paintEvent(QPaintEvent *);
+    void mousePressEvent(QMouseEvent *);
+
+private:
+    QList<QString> tabNames;
+    int currentIndex;
 };
 
 #endif // LEFTWIDGET_H

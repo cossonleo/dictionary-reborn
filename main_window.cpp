@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     layout->addWidget(rightWidget);
 
     layout->setMargin(0);
+    layout->setSpacing(0);
 
     mainWidget->setLayout(layout);
 

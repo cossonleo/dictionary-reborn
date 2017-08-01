@@ -9,6 +9,8 @@ class RightWidget : public QWidget
 
 public:
     RightWidget(QWidget *parent = 0);
+
+    void paintEvent(QPaintEvent *);
 };
 
 #endif // RIGHTWIDGET_H
