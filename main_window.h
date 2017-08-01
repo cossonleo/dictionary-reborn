@@ -19,7 +19,6 @@ private:
     QHBoxLayout *layout;
     LeftWidget *leftWidget;
     RightWidget *rightWidget;
-
 };
 
 #endif // MAIN_WINDOW_H

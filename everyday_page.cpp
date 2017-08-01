@@ -16,6 +16,7 @@ EverydayPage::EverydayPage(QWidget *parent)
 
     layout->addSpacing(10);
     layout->addWidget(imageLabel);
+    layout->addSpacing(10);
     layout->addWidget(infoLabel);
 
     QNetworkRequest request;
