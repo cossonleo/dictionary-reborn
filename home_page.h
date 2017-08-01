@@ -26,6 +26,9 @@ private:
 
     EverydayPage *everydayPage;
     DictPage *dictPage;
+
+private slots:
+    void editTextChanged();
 };
 
 #endif // HOMEPAGE_H

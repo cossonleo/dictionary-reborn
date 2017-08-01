@@ -14,11 +14,24 @@ HomePage::HomePage(QWidget *parent)
     switchLayout->addWidget(everydayPage);
     switchLayout->addWidget(dictPage);
 
-    switchLayout->setCurrentIndex(0);
-
     topLayout->addWidget(queryEditor);
     topLayout->addWidget(queryButton);
 
+    layout->addSpacing(10);
     layout->addLayout(topLayout);
     layout->addLayout(switchLayout);
+
+    connect(queryEditor, &QLineEdit::textChanged, this, &HomePage::editTextChanged);
+}
+
+void HomePage::editTextChanged()
+{
+    if (queryEditor->text().isEmpty()) {
+        switchLayout->setCurrentIndex(0);
+
+        return;
+    }
+
+    dictPage->start(queryEditor->text());
+    switchLayout->setCurrentIndex(1);
 }
