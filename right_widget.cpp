@@ -11,7 +11,7 @@ void RightWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
 
-    painter.setPen(QPen(QColor("#CECECE")));
-    painter.setBrush(QColor("#CECECE"));
+    painter.setPen(QPen(QColor("#FFFFFF")));
+    painter.setBrush(QColor("#FFFFFF"));
     painter.drawRect(rect());
 }
