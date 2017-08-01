@@ -4,7 +4,14 @@
 RightWidget::RightWidget(QWidget *parent)
     : QWidget(parent)
 {
+    layout = new QStackedLayout(this);
+    homePage = new HomePage();
+    translatePage = new TranslatePage();
 
+    layout->addWidget(homePage);
+    layout->addWidget(translatePage);
+
+    layout->setCurrentIndex(0);
 }
 
 void RightWidget::paintEvent(QPaintEvent *)

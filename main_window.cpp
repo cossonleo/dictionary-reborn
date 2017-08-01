@@ -17,6 +17,10 @@ MainWindow::MainWindow(QWidget *parent)
     mainWidget->setLayout(layout);
 
     setCentralWidget(mainWidget);
+
+    connect(leftWidget, &LeftWidget::currentIndexChanged, this, [=](int index){
+        rightWidget->layout->setCurrentIndex(index);
+    });
 }
 
 MainWindow::~MainWindow()

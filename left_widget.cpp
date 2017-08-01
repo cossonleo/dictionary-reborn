@@ -7,9 +7,9 @@ LeftWidget::LeftWidget(QWidget *parent)
 { 
     currentIndex = 0;
 
-    tabNames.insert(0, "首页");
-    tabNames.insert(1, "词典");
-    tabNames.insert(2, "翻译");
+    tabNames.insert(0, "词典");
+    tabNames.insert(1, "翻译");
+    tabNames.insert(2, "关于");
 
     setFixedWidth(120);
 }
@@ -64,6 +64,8 @@ void LeftWidget::mousePressEvent(QMouseEvent *event)
         currentIndex = 2;
 
     if (prevIndex != currentIndex) {
+        emit currentIndexChanged(currentIndex);
+
         repaint();
     }
 }

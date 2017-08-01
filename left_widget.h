@@ -18,6 +18,9 @@ protected:
 private:
     QList<QString> tabNames;
     int currentIndex;
+
+signals:
+    void currentIndexChanged(int index);
 };
 
 #endif // LEFTWIDGET_H
