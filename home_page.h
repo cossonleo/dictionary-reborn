@@ -6,6 +6,8 @@
 #include <QStackedLayout>
 #include <QLineEdit>
 #include <QPushButton>
+#include "everyday_page.h"
+#include "dict_page.h"
 
 class HomePage : public QWidget
 {
@@ -21,6 +23,9 @@ private:
 
     QLineEdit *queryEditor;
     QPushButton *queryButton;
+
+    EverydayPage *everydayPage;
+    DictPage *dictPage;
 };
 
 #endif // HOMEPAGE_H
