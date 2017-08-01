@@ -7,9 +7,11 @@ RightWidget::RightWidget(QWidget *parent)
     layout = new QStackedLayout(this);
     homePage = new HomePage();
     translatePage = new TranslatePage();
+    aboutPage = new AboutPage();
 
     layout->addWidget(homePage);
     layout->addWidget(translatePage);
+    layout->addWidget(aboutPage);
 
     layout->setCurrentIndex(0);
 }

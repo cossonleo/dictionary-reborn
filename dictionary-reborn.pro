@@ -18,13 +18,15 @@ SOURCES += main.cpp\
     right_widget.cpp \
     utils.cpp \
     home_page.cpp \
-    translate_page.cpp
+    translate_page.cpp \
+    about_page.cpp
 
 HEADERS  += main_window.h \
     left_widget.h \
     right_widget.h \
     utils.h \
     home_page.h \
-    translate_page.h
+    translate_page.h \
+    about_page.h
 
 RESOURCES += resources.qrc

@@ -5,6 +5,7 @@
 #include <QStackedLayout>
 #include "home_page.h"
 #include "translate_page.h"
+#include "about_page.h"
 
 class RightWidget : public QWidget
 {
@@ -21,6 +22,7 @@ protected:
 private:
     HomePage *homePage;
     TranslatePage *translatePage;
+    AboutPage *aboutPage;
 };
 
 #endif // RIGHTWIDGET_H
