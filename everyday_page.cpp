@@ -14,6 +14,7 @@ EverydayPage::EverydayPage(QWidget *parent)
     imageLabel->setScaledContents(true);
     infoLabel->setWordWrap(true);
 
+    layout->addSpacing(10);
     layout->addWidget(imageLabel);
     layout->addWidget(infoLabel);
 

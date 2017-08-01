@@ -17,15 +17,19 @@ HomePage::HomePage(QWidget *parent)
     topLayout->addWidget(queryEditor);
     topLayout->addWidget(queryButton);
 
-    layout->addSpacing(10);
+    layout->addSpacing(5);
     layout->addLayout(topLayout);
     layout->addLayout(switchLayout);
 
-    connect(queryEditor, &QLineEdit::textChanged, this, &HomePage::editTextChanged);
+    connect(queryEditor, &QLineEdit::textChanged, this, &HomePage::queryWord);
+    connect(queryEditor, &QLineEdit::returnPressed, this, &HomePage::queryWord);
+    connect(queryButton, &QPushButton::clicked, this, &HomePage::queryWord);
 }
 
-void HomePage::editTextChanged()
+void HomePage::queryWord()
 {
+    queryEditor->setFocus();
+
     if (queryEditor->text().isEmpty()) {
         switchLayout->setCurrentIndex(0);
 

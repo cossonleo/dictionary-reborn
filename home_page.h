@@ -28,7 +28,7 @@ private:
     DictPage *dictPage;
 
 private slots:
-    void editTextChanged();
+    void queryWord();
 };
 
 #endif // HOMEPAGE_H
