@@ -2,6 +2,7 @@
 #define ABOUTPAGE_H
 
 #include <QWidget>
+#include <QVBoxLayout>
 
 class AboutPage : public QWidget
 {
@@ -9,6 +10,9 @@ class AboutPage : public QWidget
 
 public:
     AboutPage(QWidget *parent = 0);
+
+private:
+    QVBoxLayout *layout;
 };
 
 #endif // ABOUTPAGE_H
