@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     translate_page.cpp \
     about_page.cpp \
     everyday_page.cpp \
-    dict_page.cpp
+    dict_page.cpp \
+    youdao_api.cpp
 
 HEADERS  += main_window.h \
     left_widget.h \
@@ -31,6 +32,7 @@ HEADERS  += main_window.h \
     translate_page.h \
     about_page.h \
     everyday_page.h \
-    dict_page.h
+    dict_page.h \
+    youdao_api.h
 
 RESOURCES += resources.qrc
